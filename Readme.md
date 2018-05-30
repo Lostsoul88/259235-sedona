@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Макс Филипенко](https://up.htmlacademy.ru/htmlcss/21/user/259235).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
