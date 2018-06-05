@@ -22,18 +22,22 @@
       <form action="#" class="filter-hotels">
         <h1 class="visually-hidden">Фильтр отелей</h1>
           <div class="infrastructure">
-            <label name="infrastructure-filter">Ифраструктура:
-            </label>
-            <input type="checkbox" checked> Бассейн
-            <input type="checkbox"> Парковка
-            <input type="checkbox"> Wi-Fi
+            <h2>Ифраструктура:</h2>
+            <label name="infrastructure-filter">Бассейн</label>
+            <input type="checkbox" checked>
+            <label name="infrastructure-filter">Парковка</label>
+            <input type="checkbox">
+            <label name="infrastructure-filter">Wi-Fi</label>
+            <input type="checkbox">
           </div>
           <div class="hotel-type">
-            <label name="hotel-type-filter">Тип жилья:
-            </label>
-            <input type="checkbox" checked> Гостиница
-            <input type="checkbox" checked> Мотель
-            <input type="checkbox" checked> Апартаменты
+            <h2>Тип жилья:</h2>
+            <label name="hotel-type-filter">Гостиница</label>
+            <input type="checkbox" checked>
+            <label name="hotel-type-filter">Мотель</label>
+            <input type="checkbox" checked>
+            <label name="hotel-type-filter">Апартаменты</label>
+            <input type="checkbox" checked>
           </div>
           <div class="hotel-price">
             <label name="hotel-price-filter">Стоимость в сутки(р):
@@ -41,9 +45,7 @@
             <output name="price-min">От 0</output>
             <output name="price-max">До 3000</output>
             <input type="range" min="0" max="5000">
-            <a href="#">
-              <span class="button-show">Показать</span>
-            </a>
+            <button type="submit">Показать</button>
           </div>
       </form>
       <section class="filter-result">
@@ -53,30 +55,33 @@
         <div class="filter-sort">
           <h3>Сортировка:</h3>
             <ul>
-              <a href="#"
-                <li>По цене</li>
-              </a>
-              <a href="#"
-                <li>По типу</li>
-              </a>
-              <a href="#"
-                <li>По рейтингу</li>
-              </a>
+              <li>
+                <a href="#">По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По рейтингу</a>
+              </li>
             </ul>
             <ul>
-              <a href="#"
-                <li><img src="#" alt="Вверх"></li>
-              </a>
-              <a href="#"
-                <li><img src="#" alt="Вниз"></li>
-              </a>
+              <li>
+                <a><img src="#" alt="Вверх"></a>
+              </li>
+              <li>
+                <a><img src="#" alt="Вниз"></a>
+              </li>
             </ul>
         </div>
       </section>
       <section class="hotels-catalog">
         <article class="hotel-description">
+          <div class="hotel-foto">
+            <img src="img/Amara-hotel.jpg" alt="Amara hotel">
+          </div>
           <h1>
-            <a href="#">Amara resort &amp spa
+            <a href="#">Amara resort &amp; spa
             </a>
           </h1>
             <span>Гостиница</span>
@@ -94,6 +99,9 @@
             <span>Рейтинг: 8,5</span>
         </article>
         <article class="hotel-description">
+          <div class="hotel-foto">
+            <img src="img/Desert-hotel.jpg" alt="Desert hotel">
+          </div>
           <h1>
             <a href="#">Desert Quail inn
             </a>
@@ -112,6 +120,9 @@
             <span>Рейтинг: 8,9</span>
         </article>
         <article class="hotel-description">
+          <div class="hotel-foto">
+            <img src="img/Villas-hotel.jpg" alt="Villas hotel">
+          </div>
           <h1>
             <a href="#">Villas at Poco Diablo
             </a>
