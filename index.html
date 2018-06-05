@@ -25,12 +25,12 @@
           <h2 class="visually-hidden">Причины крутости</h2>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
-      <section class="reason-1">
+      <section class="reasons-list">
         <div class="reasons-item">
           <h3>Настоящий городок</h3>
-            <p>№1</p>
+            <span>-№1-</span>
             <p>Седона - не аттракцион для турстов, там течёт своя жизнь</p>
-              <img class="reasons-picture-1" src="http://placehold.it/150x100">
+              <img class="reasons-picture" src="http://placehold.it/150x100">
         </div>
       </section>
       <section class="recomendations">
@@ -48,46 +48,59 @@
               <p>Не только китайского, но и местного производства!</p>
           </div>
       </section>
-      <section class="reason-2">
+      <section class="reasons-list">
         <div class="reasons-item">
-          <img class="reasons-picture-2" src="http://placehold.it/150x100">
+          <img class="reasons-picture" src="http://placehold.it/150x100">
             <h3>Там есть мост Дьявола</h3>
-              <p>№2</p>
+              <span>-№2-</span>
               <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
         </div>
       </section>
-      <section class="reason-345">
+      <section class="reasons-list">
         <div class="reason-item">
           <h3>Небольшая площадь</h3>
-            <p>№3</p>
+            <span>-№3-</span>
             <p>Все достопримечательности находяться очень близко</p>
         </div>
         <div class="reason-item">
           <h3>Красивая дорога</h3>
-            <p>№4</p>
+            <span>-№4-</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="reason-item">
           <h3>Мало туристов</h3>
-            <p>№5</p>
+            <span>-№5-</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </section>
       <section class="booking">
         <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие прделожения гостиниц в Седоне</p>
-        <span class="button search-hotels">Поиск гостиницы в Седоне</span>
-        <div  class="booking-date">
-          <p>Дата заезда:</p>
-            <!-- Форма -->
-          <p>Дата выезда:</p>
-            <!-- Форма -->
-          <p>Взрослые:</p>
-            <!-- Форма -->
-          <p>Дети:</p>
-            <!-- Форма -->
-        </div>
-        <span class="button search">Найти</span>
+        <a class="button-search-hotels">Поиск гостиницы в Седоне</a>
+        <form action="hotels.html" method="get" class="booking-date">
+          <div class="date-in">
+            <label name="date-in">Дата заезда:
+            </label>
+            <input type="date">
+          </div>
+          <div class="date-out">
+            <label name="date-out">Дата выезда:
+            </label>
+            <input type="date">
+          </div>
+          <div class="adults">
+            <label name="adults">Взрослые:
+            </label>
+            <input type="number" min="0">
+          </div>
+          <div class="kids">
+            <label name="kids">Дети:
+            </label>
+            <input type="number" min="0">
+          </div>
+          <button class="button-search">Найти
+          </button>
+        </form>
         <div class="map">
           <img src="map.html" alt="Карта отелей">
         </div>
