@@ -76,29 +76,31 @@
       <section class="booking">
         <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие прделожения гостиниц в Седоне</p>
-        <a class="button-search-hotels">Поиск гостиницы в Седоне</a>
-        <form action="hotels.html" method="get" class="booking-date">
-          <div class="date-in">
-            <label name="date-in">Дата заезда:
+        <button type="button" class="search-hotels">
+          Поиск гостиницы в Седоне
+        </button>
+        <form action="https://echo.htmlacademy.ru" method="post" class="booking-date">
+          <div class="bokking-item">
+            <label>Дата заезда:
+              <input type="text" name="date-in" placeholder="24 апреля 2017">
             </label>
-            <input type="date">
           </div>
-          <div class="date-out">
-            <label name="date-out">Дата выезда:
+          <div class="booking-item">
+            <label>Дата выезда:
+              <input type="text" name="date-out" placeholder="4 июля 2017">
             </label>
-            <input type="date">
           </div>
-          <div class="adults">
-            <label name="adults">Взрослые:
+          <div class="booking-item">
+            <label>Взрослые:
+              <input type="text" name="adults" placeholder="2">
             </label>
-            <input type="number" min="0">
           </div>
-          <div class="kids">
-            <label name="kids">Дети:
+          <div class="booking-item">
+            <label>Дети:
+              <input type="text" name="kids" placeholder="0">
             </label>
-            <input type="number" min="0">
           </div>
-          <button class="button-search">Найти
+          <button class="button-search" type="submit">Найти
           </button>
         </form>
         <div class="map">
@@ -118,8 +120,9 @@
         </ul>
       </div>
       <div class="footer-logo-html">
+        <span>Website by</span>
         <a href="https://htmlacademy.ru">
-          <img class="html-logo" src="img/html-logo.svg" alt="Логотип HTML-Академии">
+          <img class="html-logo" src="#" alt="Логотип HTML-Академии">
         </a>
       </div>
     </footer>
