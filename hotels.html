@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -69,20 +72,20 @@
         <div class="filter-count">
           <h2>Найдено: 3</h2>
         </div>
-        <div class="filter-sort">
+        <div class="sort">
           <h3>Сортировка:</h3>
-            <ul>
+            <ul class="sort-list">
               <li>
-                <a href="#" class="button-filter-sort">По цене</a>
+                <a href="#" class="button-sort-active">По цене</a>
               </li>
               <li>
-                <a href="#" class="button-filter-sort">По типу</a>
+                <a href="#" class="button-sort">По типу</a>
               </li>
               <li>
-                <a href="#" class="button-filter-sort">По рейтингу</a>
+                <a href="#" class="button-sort">По рейтингу</a>
               </li>
             </ul>
-            <ul>
+            <ul class="arrows">
               <li>
                   <a href="#" class="button-up"><img src="#" alt="Вверх"></a>
               </li>
@@ -105,7 +108,7 @@
             <span>от 4000 р.</span>
             <a href="#" class="button-more">Подробнее</a>
             <a href="#" class="button-booking">Забронировать</a>
-            <ul>
+            <ul class="stars">
               <li><img src="#" alt="*"></li>
               <li><img src="#" alt="*"></li>
               <li><img src="#" alt="*"></li>
@@ -125,7 +128,7 @@
             <span>от 3000 р.</span>
             <a href="#" class="button-more">Подробнее</a>
             <a href="#" class="button-booking">Забронировать</a>
-            <ul>
+            <ul class="stars">
               <li><img src="#" alt="*"></li>
               <li><img src="#" alt="*"></li>
               <li><img src="#" alt="*"></li>
@@ -144,7 +147,7 @@
             <span>от 2000 р.</span>
               <a href="#" class="button-more">Подробнее</a>
               <a href="#" class="button-booking">Забронировать</a>
-            <ul>
+            <ul class="stars">
               <li><img src="#" alt="*"></li>
               <li><img src="#" alt="*"></li>
             </ul>
@@ -157,10 +160,22 @@
         <a href="#">#Visitsedona</a>
       </div>
       <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
+        <ul class="social-btns">
+          <li>
+            <a class="social-button" href="#">
+              Твиттер
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              Фейсбук
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              Ютуб
+            </a>
+          </li>
         </ul>
       </div>
       <div class="footer-logo-html">
