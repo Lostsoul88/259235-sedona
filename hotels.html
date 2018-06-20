@@ -8,21 +8,20 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.png" alt="Логотип Седона">
-        </a>
-        <ul class="site-navigation-left">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="gallery.html">Фото и Видео</a></li>
-        </ul>
-        <ul class="site-navigation-right">
-          <li><a href="map.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a>Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="main-container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/index-logo.png" alt="Логотип Седона">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="gallery.html">Фото и Видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
     <main class="container">
       <form action="https://echo.htmlacademy.ru" method="post" class="filter-hotels">
         <h1 class="visually-hidden">Фильтр отелей</h1>
@@ -108,7 +107,7 @@
           <div class="hotel-info">
             <a href="img/amara-hotel.jpg"><img src="img/amara-hotel.jpg" alt="Amara hotel"></a>
             <h1>
-              <a href="#">Amara resort &amp; spa
+              <a href="#" class="hotel-name">Amara resort &amp; spa
               </a>
             </h1>
               <span>Гостиница</span>
@@ -130,7 +129,7 @@
           <div class="hotel-info">
             <a href="img/desert-hotel.jpg"><img src="img/desert-hotel.jpg" alt="Desert hotel"></a>
             <h1>
-              <a href="#">Desert Quail inn
+              <a href="#" class="hotel-name">Desert Quail inn
               </a>
             </h1>
               <span>Мотель</span>
@@ -151,7 +150,7 @@
           <div class="hotel-info">
             <a href="img/villas-hotel.jpg"><img src="img/villas-hotel.jpg" alt="Villas hotel"></a>
             <h1>
-              <a href="#">Villas at Poco Diablo
+              <a href="#" class="hotel-name">Villas at Poco Diablo
               </a>
             </h1>
               <span>Апартаменты</span>
