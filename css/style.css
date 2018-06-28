@@ -23,6 +23,26 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  width: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
   width: 1200px;
   text-align: center;
@@ -40,9 +60,28 @@ a {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.site-navigation li {
+  width: 240px;
 }
 
 .site-navigation a {
+  display: block;
+  padding: 15px 70px;
+  vertical-align: middle;
   color: #000000;
 }
 
@@ -70,10 +109,10 @@ a {
 
 section.reasons {
   background-image: url("../img/bg.jpg");
-  background-position: top;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  padding-top: 569px;
-  padding-bottom: 52px;
+  padding-top: 573px;
+  padding-bottom: 53px;
 }
 
 form.filter-hotels {
@@ -115,17 +154,14 @@ form.filter-hotels {
   text-align: center;
 }
 
-.recomendations-item {
-  padding-top: 158px;
-  padding-bottom: 83px;
-}
-
 .recomendations-item h3 {
+  padding-top: 158px;
   font-size: 21px;
   line-height: 26px;
 }
 
 .recomendations-item p {
+  padding-bottom: 83px;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
@@ -160,6 +196,8 @@ form.filter-hotels {
 }
 
 .search-hotels {
+  display: inline-block;
+  padding: 30px 135px;
   font: inherit;
   color: #ffffff;
   background-color: #766357;
@@ -181,6 +219,8 @@ form.filter-hotels {
 }
 
 .button-search {
+  display: inline-block;
+  padding: 16px 190px;
   font: inherit;
   color: #ffffff;
   background-color: #81b3d2;
@@ -230,6 +270,9 @@ form.filter-hotels {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin-top: 46px;
+  margin-bottom: 52px;
+  margin-left: 73px;
 }
 
 .social-button {
@@ -260,6 +303,11 @@ form.filter-hotels {
   color: #88b6d1;
 }
 
+.footer-logo-html a {
+  padding-right: 150px;
+  position: relative;
+}
+
 .footer-logo-html a:hover {
   color: #81b3d2;
 }
@@ -274,10 +322,22 @@ form.filter-hotels {
   font-weight: normal;
 }
 
+.footer-logo-html svg {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+}
+
 .infrastructure,
 .hotel-type,
 .hotel-price {
   text-align: center;
+  font-weight: normal;
+}
+
+.infrastructure,
+.hotel-type {
+  margin-top: 16px;
 }
 
 .filter-result,
@@ -291,6 +351,7 @@ article {
   background-color: rgba(0, 0, 0, 0);
   font-size: 14px;
   line-height: 21px;
+  font-weight: normal;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -380,6 +441,10 @@ li.stars {
 }
 
 .button-more {
+  display: inline-block;
+  padding: 3px 17px 3px;
+  margin-right: 6px;
+  margin-top: 13px;
   font: inherit;
   color: #ffffff;
   background-color: #81b3d2;
@@ -400,6 +465,9 @@ li.stars {
 }
 
 .button-booking {
+  display: inline-block;
+  padding: 3px 17px 3px;
+  margin-top: 13px;
   font: inherit;
   color: #ffffff;
   background-color: #766357;
@@ -432,6 +500,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .main-header-logo {
@@ -440,19 +510,6 @@ body {
   margin: 0;
   width: 138px;
   height: 70px;
-}
-
-.site-navigation {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
-
-.site-navigation li {
-  width: 240px;
-  padding-top: 16px;
-  padding-bottom: 18px;
 }
 
 .reasons-list-b,
@@ -475,33 +532,71 @@ body {
   width: 400px;
 }
 
+.recomendations-item h3 {
+  margin: 0;
+  position: relative;
+}
+
+.house h3::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 162px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.food h3::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 163px;
+  width: 74px;
+  height: 70px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.presents h3::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 168px;
+  width: 64px;
+  height: 76px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .main-footer {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
 }
 
 .footer-insta,
-.footer-social,
 .footer-logo-html {
+  width: 240px;
+  }
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 400px;
 }
 
-.footer-insta {
-  margin-top: 46px;
-}
-
-.footer-social {
-  margin-top: 36px;
-}
-
 .footer-logo-html {
-  margin-top: 40px;
-  padding-right: 84px;
+  padding-right: 73px;
 }
 
 .filter-hotels {
@@ -612,8 +707,6 @@ body {
 .hotel-info {
   margin: 0;
   padding-left: 73px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   list-style: none;
   display: flex;
   align-items: flex-start;
@@ -629,6 +722,7 @@ body {
 .hotel-info-wrapper h1 {
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 .hotel-span-wrapper {
@@ -638,6 +732,10 @@ body {
   justify-content: space-between;
   font-weight: normal;
   width: 190px;
+}
+
+.hotel-span-wrapper span {
+  padding-top: 5px;
 }
 
 .raiting {
@@ -658,15 +756,32 @@ body {
 }
 
 .social-btns {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 150px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 46px;
+  height: 48px;
 }
 
-.social-btns li {
-  width: 46px;
-  margin-right: 6px;
+.social-button:active path {
+  fill: #88b6d1;
+}
+
+.footer-logo-html a:hover path {
+  fill: #81b3d2;
+}
+
+.footer-logo-html a:active path {
+  fill: #bdbbbc;
 }
