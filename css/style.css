@@ -59,19 +59,10 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  list-style: none;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-}
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
 }
 
 .site-navigation li {
@@ -83,6 +74,20 @@ input[type="radio"].visually-hidden {
   padding: 15px 70px;
   vertical-align: middle;
   color: #000000;
+}
+
+li.left {
+  padding-left: 72px;
+  text-align: left;
+}
+
+li.middle {
+  margin-right: 240px;
+}
+
+li.right {
+  padding-right: 72px;
+  text-align: right;
 }
 
 .site-navigation a:hover {
@@ -103,16 +108,26 @@ input[type="radio"].visually-hidden {
 
 .reasons {
   text-align: center;
+  padding-left: 355px;
+  padding-right: 355px;
   font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons p {
+  padding-top: 15px;
+  padding-bottom: 35px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
   line-height: 26px;
 }
 
 section.reasons {
   background-image: url("../img/bg.jpg");
-  background-position: 50% 50%;
+  background-position: 0 -56px;
   background-repeat: no-repeat;
-  padding-top: 573px;
-  padding-bottom: 53px;
+  padding-top: 568px;
 }
 
 form.filter-hotels {
@@ -124,30 +139,49 @@ form.filter-hotels {
   color: #ffffff;
 }
 
-.reasons-item {
+.reasons-item-b,
+.reasons-item-e {
+  padding: 0;
   text-align: center;
-  padding-bottom: 56px;
+  width: 400px;
 }
 
-.reasons-item h3 {
+.reasons-item-b h3,
+.reasons-item-e h3 {
+  padding-bottom: 20px;
+  margin: 0;
   text-align: center;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
 }
 
-.reasons p {
+.reasons-item-e h3 {
+  padding-top: 45px;
+}
+
+.reasons-item-b span,
+.reasons-item-e span,
+.reasons-item-b p,
+.reasons-item-e p {
   text-align: center;
   font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
 }
 
-.reasons-item span,
-.reasons-item p {
-  text-align: center;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
+.reasons-item-e p {
+  padding-top: 10px;
+  padding-bottom: 42px;
+}
+
+.reasons-item-b {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.reasons-item-e {
+  padding-left: 65px;
+  padding-right: 65px;
 }
 
 .recomendations {
@@ -155,16 +189,46 @@ form.filter-hotels {
 }
 
 .recomendations-item h3 {
-  padding-top: 158px;
+  padding-top: 160px;
+  padding-bottom: 10px;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
+  margin: 0;
+  position: relative;
 }
 
 .recomendations-item p {
-  padding-bottom: 83px;
+  padding-bottom: 69px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
+}
+
+.house p {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.food p {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.presents p {
+  padding-left: 62px;
+  padding-right: 60px;
+}
+
+.reasons-list-b,
+.reasons-list-e,
+.recomendations {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .reasons-list-b {
@@ -178,11 +242,22 @@ form.filter-hotels {
 }
 
 .booking {
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding-top: 52px;
+}
+
+.booking h1 {
+  font-size: 30px;
+  line-height: 36px;
+  padding-top: 30px;
+  padding-bottom: 5px;
 }
 
 .booking p {
+  padding-bottom: 33px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: normal;
 }
 
@@ -197,7 +272,7 @@ form.filter-hotels {
 
 .search-hotels {
   display: inline-block;
-  padding: 30px 135px;
+  padding: 30px 140px;
   font: inherit;
   color: #ffffff;
   background-color: #766357;
@@ -512,29 +587,8 @@ body {
   height: 70px;
 }
 
-.reasons-list-b,
-.reasons-list-e,
-.recomendations {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.reasons-item {
-  width: 400px;
-}
-
 .recomendations-item {
   width: 400px;
-}
-
-.recomendations-item h3 {
-  margin: 0;
-  position: relative;
 }
 
 .house h3::before {
@@ -778,10 +832,10 @@ body {
   fill: #88b6d1;
 }
 
-.footer-logo-html a:hover path {
+.footer-logo:hover path {
   fill: #81b3d2;
 }
 
-.footer-logo-html a:active path {
+.footer-logo:active path {
   fill: #bdbbbc;
 }
